@@ -17,12 +17,12 @@ struct ContentView: View {
             if showsSplashScreen {
                 // 启动屏幕
                 SplashScreen()
-                //.transition(CustomSplashTransition(isRoot: false))
+                    //.transition(CustomSplashTransition(isRoot: false))
                     .transition(CustomSplash3DTransition(isRoot: false))
             } else {
                 // 主界面
                 RootView()
-                //.transition(CustomSplashTransition(isRoot: true))
+                    //.transition(CustomSplashTransition(isRoot: true))
                     .transition(CustomSplash3DTransition(isRoot: true))
             }
         }
